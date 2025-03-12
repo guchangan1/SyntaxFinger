@@ -1,0 +1,10 @@
+beautifulsoup4==4.10.0
+colorama==0.4.4
+mmh3==3.0.0
+openpyxl==3.0.7
+requests
+urllib3==1.25.8
+tldextract==3.4.4
+geoip2==4.0.2
+dnspython
+lxml
