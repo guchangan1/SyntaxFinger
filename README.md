@@ -110,15 +110,17 @@ pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
 
 #### 2.2.1 针对单一域名或者IP、IP段进行资产测绘
 
-​      python3 SyntaxFinger.py -d example.com -m fscan -o xx公司
-​      python3 SyntaxFinger.py -d example.com -m fqscan -o xx公司 -finger
+```
+python3 SyntaxFinger.py -d example.com -m fscan -o xx公司
+python3 SyntaxFinger.py -d example.com -m fqscan -o xx公司 -finger
 
-​      python3 SyntaxFinger.py -d 192.168.1.1 -m fqhscan -o xx公司
-​      python3 SyntaxFinger.py -d 192.168.1.1 -m fqhscan -o xx公司 -finger
+python3 SyntaxFinger.py -d 192.168.1.1 -m fqhscan -o xx公司
+python3 SyntaxFinger.py -d 192.168.1.1 -m fqhscan -o xx公司 -finger
 
-​      python3 SyntaxFinger.py -d 192.168.1.1/24 -m fscan -o xx公司
-​      python3 SyntaxFinger.py -d 192.168.1.1/24 -m fscan -o xx公司 -finger
-​      python3 SyntaxFinger.py -d 192.168.1.1/24 -m fscan -o xx公司 -finger -vest
+python3 SyntaxFinger.py -d 192.168.1.1/24 -m fscan -o xx公司
+python3 SyntaxFinger.py -d 192.168.1.1/24 -m fscan -o xx公司 -finger
+python3 SyntaxFinger.py -d 192.168.1.1/24 -m fscan -o xx公司 -finger -vest
+```
 
 ![image-20250312200636496](./img/image-20250312200636496.png)
 
