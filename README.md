@@ -83,9 +83,11 @@
 
 ### 2.1 使用前提：
 
-进入目录config 填写api-key
+```
+pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
 
-
+进入目录config/config.py 填写资产测绘引擎的api-key
+```
 
 ### 2.2 创建任务最佳实践1（如下即为资产测绘+指纹识别）：
 
@@ -200,44 +202,37 @@ target.txt
 
 ```json
 {
-    "manufacturer": "深圳市明源云科技有限公司",
-    "product": "明源云ERP",
+    "manufacturer": "深圳市彩讯科技有限公司",
+    "product": "Richmail 邮件系统",
     "finger": {
+      "keyword_title": {
+        "method": "keyword",
+        "position": "title",
+        "match": "RichMail"
+      },
       "keyword_body": {
         "method": "keyword",
         "position": "body",
-        "match": "明源云文档在线预览服务"
-      },
-      "faviconhash": {
-        "method": "faviconhash",
-        "position": null,
-        "match": "761134096"
-      },
-      "faviconhash_2": {
-        "method": "faviconhash",
-        "position": null,
-        "match": "-626335361"
+        "match": "0;url=/webmail/"
       },
       "keyword_body_2": {
         "method": "keyword",
         "position": "body",
-        "match": "mdc-section__title"
+        "match": "richmail.config.js"
       },
       "keyword_body_3": {
         "method": "keyword",
         "position": "body",
-        "match": "http://120.120.1.1:9527/default.html"
+        "match": "login"
       }
     },
     "relation": [
+      "keyword_title",
       "keyword_body",
-      "faviconhash",
-      "faviconhash_2",
-      "keyword_body_2",
-      "keyword_body_3"
+      "keyword_body_2 and keyword_body_3"
     ],
-    "day_type": 0,
-    "team": "xxxxx"
+    "day_type": -1,
+    "team": "公开"
   }
 ```
 
@@ -253,4 +248,4 @@ https://github.com/EdgeSecurityTeam/EHole
 
 本项目的开发者、提供者和维护者不对使用者使用工具的行为和后果负责，工具的使用者应自行承担风险。
 
-本项目由于开发者工作原因已不再维护，但还能使用，开源给大家参考。
+本项目由于开发者工作原因暂停更新，但功能皆可正常使用，开源给大家参考。

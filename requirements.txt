@@ -1,10 +1,12 @@
-beautifulsoup4==4.10.0
-colorama==0.4.4
-mmh3==3.0.0
-openpyxl==3.0.7
-requests
-urllib3==1.25.8
-tldextract==3.4.4
+urllib3>=1.25.2,<2.0.0
+requests==2.31.0
 geoip2==4.0.2
-dnspython
-lxml
+tldextract~=5.1.2
+openpyxl~=3.0.7
+mmh3~=3.0.0
+beautifulsoup4~=4.10.0
+argparse~=1.4.0
+dnspython~=2.6.1
+lxml~=5.2.1
+colorama~=0.4.4
+fake-useragent==1.5.1   #https://pypi.org/project/fake-useragent/
