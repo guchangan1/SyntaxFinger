@@ -205,7 +205,7 @@ target.txt
 
 6、team：随意写，个人id也行，团队id也行
 
-以明源云为例：
+以Richmail为例：
 
 ```json
 {
